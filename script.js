@@ -1,3 +1,14 @@
+let digitado = document.querySelector("#task-input")
+
+digitado.focus()
+
+document.addEventListener("keyup", () => {    
+    let tamanhoDigitado = digitado.value.length
+    if (tamanhoDigitado >= 10) {
+        createTask()
+    }
+})
+
 document.addEventListener("DOMContentLoaded", () => {
     const columns = document.querySelectorAll(".column");
 

@@ -7,11 +7,15 @@ body{
 
 .kanban-board{
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 	gap: 10px;
 	justify-content: center;
 }
 .column{
-	width: 200px;
+	display: flex;
+	gap: 10px;
+	/*width: 300px;*/
 	background-color: #fff;
 	padding: 10px;
 	border-radius: 5px;
@@ -29,6 +33,7 @@ h2{
 	margin: 5px 0;
 	border-radius: 3px;
 	cursor: grab;
+	font-size: 1.2rem;
 }
 
 #in-progress .task{
@@ -43,6 +48,13 @@ h2{
 
 .task-creator{
 	margin: 10px 0;
+}
+
+#task-input{
+	width: 250px;
+	height: 40px;
+	background-color: rgb(216, 233, 240);
+	font-size: 1.5rem;
 }
 
 .trash-bin{
