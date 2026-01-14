@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quadro kanban</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="kanban-board">
+  	<div class="column" id="todo">
+  		<h2>Lista 1</h2>
+  		<div class="task-list"></div>
+  	</div>
+
+  	<div class="column" id="in-progress">
+  		<h2>Lista 2</h2>
+  		<div class="task-list"></div>
+  	</div>
+
+  	<div class="column" id="review">
+  		<h2>Lista 3</h2>
+  		<div class="task-list"></div>
+  	</div>
+  </div>
+
+  <div class="task-creator">
+    <input type="text" id="task-input" placeholder="Digite uma tarefa...">
+    <button onclick="createTask()">Adicionar</button>
+  </div>
+  
+  <div class="trash-bin column">
+    <h5>para apagar arraste tarefas para a lixeira</h5>
+    <img src="trash-bin.png" width="100">
+  </div>  	
+
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

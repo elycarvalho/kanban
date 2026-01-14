@@ -1,0 +1,57 @@
+body{
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 20px;
+} 
+
+.kanban-board{
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+.column{
+	width: 200px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+h2{
+	text-align: center;
+}
+
+.task{
+	background-color: #ffeb3b;
+	padding: 5px;
+	margin: 5px 0;
+	border-radius: 3px;
+	cursor: grab;
+}
+
+#in-progress .task{
+	background-color: green;
+	color: #f4f4f4;
+}
+
+#review .task{
+	background-color: rgb(194, 95, 2);
+	color: #f4f4f4;
+}
+
+.task-creator{
+	margin: 10px 0;
+}
+
+.trash-bin{
+	width: 100px;
+	height: 185px;
+	padding: 7px;
+	text-align: center;
+}
+
+.trash-bin .task{
+	display: none;	
+}
